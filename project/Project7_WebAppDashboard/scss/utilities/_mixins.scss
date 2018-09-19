@@ -1,0 +1,43 @@
+// media query
+@mixin mq($bp){
+
+  @if $bp == null {
+    @error "#{$bp} is not valid.";
+
+  }@else if $bp == 'tablet' {
+
+    @media screen and (min-width: $tablet-breakpoint){
+      @content;
+    }
+  }@else if $bp == 'desktop'{
+
+    @media screen and (min-width: $laptop-breakpoint){
+      @content;
+    }
+
+  }
+
+};
+
+@mixin gridLayout(){}
+
+// flex settings
+@mixin flex(
+                     $just,
+                     $disp:flex,
+                     $dir: column,
+                     $items: center
+            )
+           {
+    justify-content: $just;
+            display: $disp; //felx
+      flex-direction: $dir; //column
+      align-items: $items;
+    @content;
+}
+
+@mixin circleImg ($height,$width){
+  border-radius: 50%;
+  height: $height;
+  width: $width;
+}

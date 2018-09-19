@@ -1,0 +1,163 @@
+.containerAll{
+
+  @include mq(tablet){
+    display: grid;
+    grid-template-columns: $grid-template-columns;
+    grid-template-areas: $grid-template-area-tablet;
+  }
+
+}
+
+
+.header{
+  display: flex;
+  background-color: $theme-color;
+  padding: 2vh 3vw;
+
+  @include mq(tablet){
+    grid-area: header;
+  }
+
+}
+
+.yourApp{
+  width: 58%; //80% for large
+  padding-top: 5px;
+}
+
+.span{
+  font-weight: 100;
+}
+
+
+.title{
+  margin: 0;
+  font-weight: 900;
+  font-size: 4vw;
+  color: #fff;
+  font-family: $font-family2;
+
+  @include mq(tablet){
+    font-size: 2.5vw;
+  }
+}
+
+// flex settings
+// @mixin flex(
+//                      $just,
+//                      $disp:flex,
+//                      $dir: column,
+//                      $items: center
+//             )
+//            {
+//     justify-content: $just;
+//             display: $disp; //felx
+//       flex-direction: $dir; //column
+//       align-items: $items;
+//     @content;
+// }
+
+.bellNotification{
+  width: 10%; //5% for large
+  @include flex($just: center,$dir: row);
+  @include mq(tablet){
+    font-size: 2vw;
+  }
+}
+
+.bellAlert{
+  background-color: rgb(165, 241, 117);
+  width: 0.3em;
+  height: 0.3em;
+  border-radius: 50%;
+  align-self: baseline;
+  position: absolute;
+  margin-left: 15px;
+}
+
+//animation for notifications
+@keyframes bell {
+
+  15%{
+  transform-origin: 50% 0%;
+  transform: rotate(45deg);
+  }
+
+  40%{
+    transform-origin: 50% 0%;
+    transform: rotate(-35deg);
+  }
+
+  65%{
+    transform-origin: 50% 0%;
+    transform: rotate(20deg);
+  }
+
+  90%{
+    transform-origin: 50% 0%;
+    transform: rotate(-10deg);
+  }
+
+  100%{
+    transform-origin: 50% 0%;
+    transform: rotate(0deg);
+  }
+
+}
+
+.bellIcon{
+  width: 20px;
+  height: 20px;
+
+  @include mq(tablet){
+    width: 30px;
+    height: 30px;
+  }
+
+  @include mq(desktop){
+    width: 50px;
+    height: 50px;
+  }
+
+}
+
+.bellIcon:hover{
+  animation: bell 1.2s ease-out forwards;
+}
+
+.yourProfile{
+  width: 32%; // 15% for large
+  border-left: 2px solid rgb(120, 103, 162);
+  @include flex($just: space-between, $dir:row);
+
+  @include mq(tablet){
+    @include flex($just: space-around, $dir: row );
+  }
+}
+
+.img{
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.yourName{
+  font-size: 12px; //26px for large
+  display: inline-block;
+  color: #fff;
+
+  @include mq(tablet){
+    font-size: 26px;
+  }
+}
+
+.circleImg{
+  @include circleImg($height: 25px, $width: 25px);
+
+  @include mq(tablet){
+    @include circleImg($height: 35px, $width: 35px);
+  }
+
+  @include mq(desktop){
+    @include circleImg($height: 50px, $width: 50px);
+  }
+}

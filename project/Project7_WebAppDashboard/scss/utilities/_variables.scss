@@ -1,0 +1,43 @@
+//fonts
+$font-family1: 'Roboto', sans-serif;
+$font-family2: 'Raleway', sans-serif;
+
+
+// colors
+$theme-color: rgb(157, 137, 254);
+$nav-color: rgb(94, 85, 150);
+$accent-color: rgb(107, 252, 157);
+$font-color: #aaaaaa;
+$field-color: rgb(243, 236, 249);
+
+// breakpoints
+$tablet-breakpoint: 768px;
+$laptop-breakpoint: 1024px;
+
+// grid template
+$grid-template-area-mobile: "header"
+                            "nav"
+                            "dashboard"
+                            "lineGraph"
+                            "barGraph"
+                            "pieChart"
+                            "social"
+                            "social"
+                            "social"
+                            "newMembers"
+                            "recentActivity"
+                            "messageUser"
+                            "settings";
+
+$grid-template-area-tablet: "header header header"
+                            "nav dashboard dashboard"
+                            "nav alert alert"
+                            "nav traffic traffic"
+                            "nav daily mobile"
+                            "nav social social"
+                            "nav newMembers activity"
+                            "nav messageUser settings";
+
+$grid-template-columns: 70px 1fr 1fr;
+
+$grid-template-rows: auto 70px auto auto auto auto auto;

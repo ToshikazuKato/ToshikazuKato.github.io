@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kazu Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css">
+    <link rel="stylesheet" href="css/SplitLayout/demo.css">
+    <link rel="stylesheet" href="css/SplitLayout/component2.css">
+    <script src="js/SplitLayout/modernizr.custom.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.0/dist/aos.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+
+    <header class="header">
+      <nav class="topnav" id="toggleNav">
+          <img src="img/Shape2.svg" alt="Logo" class="logo">
+          <a href="#home" class="links">
+              <div class="innerBorder">HOME</div>
+          </a>
+          <a href="#about" class="links">
+              <div class="innerBorder">ABOUT</div>
+          </a>
+          <a href="#work" class="links">
+              <div class="innerBorder">WORK</div>
+          </a>
+          <a href="#" class="icon" id="bar">
+            <i class="fas fa-bars"></i>
+          </a>
+      </nav>
+
+      <div class="typingContainer flex" id="home">
+        <div class="inline">
+          <p class="line anim-typewriter">Hi, I'm Kazu. Welcome to my portfolio.</p>
+        </div>
+      </div>
+
+      <div class="svgWrapper">
+        <svg version="1.1" id="Contours" x="0px" y="0px" width="750px" height="750px" viewBox="0 0 750 750" fill="none">
+        <!-- outer line -->
+          <!-- <rect class="selected"  fill="none" opacity="1.0" stroke="#fff" stroke-linecap="square" stroke-width="5px"
+           x="50px" y="0px" height="650" width="650"/> -->
+
+           <path class="selected"  fill="none" opacity="1.0" stroke="#fff" stroke-linecap="square" stroke-width="8px"
+            d="M50 0
+            L675 0
+            L675 650
+            L50 650
+            L50 0" />
+
+          <!-- <rect class="selected"  fill="none" opacity="1.0" stroke="#0038ff" stroke-width="15px" stroke-linecap="square"
+           x="125px" y="75px" height="500" width="500" /> -->
+
+           <path class="selected"  fill="none" opacity="1.0" stroke="#0038ff" stroke-linecap="square" stroke-width="15px"
+            d="M125 75
+            L600 75
+            L600 575
+            L125 575
+            L125 75" />
+
+          <path class="selected"  fill="none" opacity="1.0" stroke="#fff" stroke-width="20px" stroke-linecap="square"
+           	d="M231.900503 176.180854 C292.917749 176.098874 353.934995 176.016894 414.952241 175.934914 C416.000665 191.757764 416.252062 207.633398 415.705158 223.481510 C394.431226 223.866465 373.157294 224.251420 351.883362 224.636375 C351.516461 256.719317 351.680413 288.808329 352.375129 320.885847 C377.162633 292.483409 401.950138 264.080972 426.737643 235.678534 C430.768412 231.059930 435.556762 226.070822 441.686074 225.970133 C462.392592 225.629981 483.109353 225.913635 503.798796 226.820582 C472.094322 260.634189 440.389848 294.447795 408.685373 328.261402 C407.574985 329.445659 406.395538 330.794166 406.383957 332.417524 C406.372928 333.964023 407.428610 335.287335 408.429199 336.466571 C442.151074 376.209110 475.872947 415.951650 509.594820 455.694190 C489.679396 455.884421 469.763972 456.074651 449.848549 456.264881 C443.996912 456.320775 437.262187 455.972959 433.676282 451.348453 C407.215148 417.223216 380.099148 383.605774 352.348247 350.520871 C351.675970 385.425199 351.528427 420.339632 351.905684 455.248395 C334.075030 456.183845 316.207276 456.411905 298.358555 455.931859 C295.649714 378.933461 294.892351 301.866418 296.087437 224.829655 C274.922528 223.825487 253.721041 223.592488 232.539175 224.131273 C231.642363 208.166671 231.429212 192.163679 231.900503 176.180854 z" />
+
+       </svg>
+      </div>
+
+    </header>
+
+    <main>
+
+      <section class="aboutContainer" id="about" data-aos="fade-right">
+
+        <div class="container">
+        	<div id="splitlayout" class="splitlayout">
+        		<div class="intro">
+        			<div class="side side-left">
+        				<div class="intro-content intro-content-left">
+        					<h1><span>Toshikazu <br/> Kato</span><span>Web Developer</span></h1>
+                  <ul class="socialListContact flex">
+                    <li class="socialContact github">
+                      <a href="https://github.com/ToshikazuKato" target="_blank" class="socialLinkContact">
+                        <i class="fab fa-github"></i>
+                      </a>
+                    </li>
+                    <li class="socialContact linkedin">
+                      <a href="https://www.linkedin.com/feed" target="_blank" class="socialLinkContact">
+                        <i class="fab fa-linkedin"></i>
+                      </a>
+                    </li>
+                    <li class="socialContact instagram">
+                      <a href="https://www.instagram.com/kazu27bsk/" target="_blank" class="socialLinkContact">
+                        <i class="fab fa-instagram"></i>
+                      </a>
+                    </li>
+                    <li class="socialContact codepen">
+                      <a href="https://codepen.io/ToshikazuKato/" target="_blank" class="socialLinkContact">
+                        <i class="fab fa-codepen"></i>
+                      </a>
+                    </li>
+                    <li class="socialContact facebook">
+                      <a href="https://www.facebook.com/toshikazu.kato.906" target="_blank" class="socialLinkContact">
+                        <i class="fab fa-facebook"></i>
+                      </a>
+                    </li>
+                  </ul>
+        				</div>
+        				<div class="overlay"></div>
+        			</div>
+        			<div class="side side-right">
+        				<div class="intro-content intro-content-right">
+        				</div>
+        				<div class="overlay"></div>
+        			</div>
+        		</div><!-- /intro -->
+        		<div class="page page-right page-large">
+        			<div class="page-inner">
+        				<section>
+                  <h1 class="right-content-title tag">#TagMe</h1>
+
+                  <div class="keywordContainer flex">
+                    <p class="keyword">#Japanese</p>
+                    <p class="keyword">#English</p>
+                    <p class="keyword">#Cross-CulturalCommunication</p>
+                    <p class="keyword">#Codecademy</p>
+                    <p class="keyword">#FreeCodeCamp</p>
+                    <p class="keyword">#Treehouse</p>
+                    <p class="keyword">#Basketball</p>
+                    <p class="keyword">#Snowboarding</p>
+                    <p class="keyword">#Cycling</p>
+                    <p class="keyword">#Driving</p>
+                    <p class="keyword">#Photography</p>
+                    <p class="keyword">#Travel</p>
+                    <p class="keyword">#Tech</p>
+                    <p class="keyword">#Coffee</p>
+                    <p class="keyword">#Ukulele</p>
+                    <p class="keyword">#Hitchhiking</p>
+                    <p class="keyword">#Cooking</p>
+                    <p class="keyword">#Youtube</p>
+                    <p class="keyword">#Sleeping</p>
+                    <p class="keyword">#StarWars</p>
+                    <p class="keyword">#Camping</p>
+                    <p class="keyword">#Mango</p>
+                    <p class="keyword">#Starbucks</p>
+
+                  </div>
+
+        					<!-- content -->
+        				</section>
+
+        				<section>
+                  <h1 class="right-content-title story">STORY</h1>
+                  <div class="storyContainer">
+                    <p class="myStory">
+                      Hi, I'm Kazu. I was born and brought up in Japan but I also spent one year in the UK for the purpose of learning English and being a gentleman. Half a year after graduating from university, I found myself living in India, where I started learning web development. I was educated at Free Code Camp and Treehouse and took 4 certificates from them.
+                      Now, I've been learning web development for 6 months and am so happy that I finally found something that I would love to work on.
+                    </p>
+                    <p class="myStory">
+                      As you can tell from #TagMe, Iv'e got a bunch of different interests and hobbies. When it comes to these, I'm quite a picky person. One of the things that can prove it is coffee.
+                      I'm addicted to coffee and I can't live without it. I grind high quality coffee beans and brew coffee every day. I even roast raw coffee beans on my own to seek for my best coffee.
+                    </p>
+                    <p class="myStory ">
+                      Like so, web development is no exception.
+                    </p>
+                  </div>
+        			  </section>
+
+        			</div><!-- /page-inner -->
+        		</div><!-- /page-right -->
+        		<div class="page page-left page-fill">
+        			<div class="page-inner">
+        				<h1>Skills</h1>
+                <div class="skillContainer flex">
+                  <div class="skillCard html">
+                    <i class="fab fa-html5"></i>
+                    <h3 class="skillName">HTML</h3>
+                    <ul class="skillList">
+                      <li><p class="descSkill">Semantic markup</p></li>
+                      <li><p class="descSkill">Formatting page content</p></li>
+                      <li><p class="descSkill">Web page and application strucure</p></li>
+                    </ul>
+                  </div>
+                  <div class="skillCard css">
+                    <i class="fab fa-css3-alt"></i>
+                    <h3 class="skillName">CSS</h3>
+                    <ul class="skillList">
+                      <li><p class="descSkill">Responsive Design</p></li>
+                      <li><p class="descSkill">Bootstrap</p></li>
+                      <li><p class="descSkill">Sass</p></li>
+                      <li><p class="descSkill">SVG Animation</p></li>
+                    </ul>
+                  </div>
+                  <div class="skillCard js">
+                    <i class="fab fa-js"></i>
+                    <h3 class="skillName">JavaScript</h3>
+                    <ul class="skillList">
+                      <li><p class="descSkill">jQuery</p></li>
+                      <li><p class="descSkill">AJAX, API</p></li>
+                      <li><p class="descSkill">React</p></li>
+                    </ul>
+                  </div>
+                </div>
+
+        			</div><!-- /page-inner -->
+        		</div><!-- /page-left -->
+        		<a href="#about" class="back back-right" title="back to intro">→</a>
+        		<a href="#about" class="back back-left" title="back to intro">←</a>
+        	</div><!-- /splitlayout -->
+        </div><!-- /container -->
+
+      </section>
+
+      <section class="workContainer" id="work" data-aos="fade-right">
+        <div class="titleDiv">
+          <h1 class="title">WORK</h1>
+        </div>
+
+        <div class="projectContainer flex">
+
+          <div class="projectCard" data-aos="flip-left" data-aos-duration="1500">
+            <a href="project/Project4_WebStyleGuide/index.html" target="_blank" class="bottom">
+              <div class="prjImg">
+                  <img src="img/WebStyleGuide.png" alt="Web Style Guide Project" class="prj">
+                <div class="prjOverlay">
+                  <h3 class="prjTitle">Web Style Guide </h3>
+                  <div class="prjSkill">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-sass"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="projectCard" data-aos="flip-left" data-aos-duration="2500">
+            <a href="project/Project6_GameShowApp/index.html" target="_blank">
+              <div class="prjImg">
+                  <img src="img/GameShowApp.png" alt="Game Show App" class="prj">
+                <div class="prjOverlay">
+                  <h3 class="prjTitle">Game Show App</h3>
+                  <div class="prjSkill">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="projectCard" data-aos="flip-left" data-aos-duration="3500">
+            <a href="project/Project7_WebAppDashboard/index.html" target="_blank">
+              <div class="prjImg">
+                  <img src="img/WebAppDashboard.png" alt="Web App Dashboard" class="prj">
+                <div class="prjOverlay">
+                  <h3 class="prjTitle">Web App Dashboard</h3>
+                  <div class="prjSkill">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="projectCard" data-aos="flip-left" data-aos-duration="4500">
+            <a href="project/Project8_EmployeeDirectorywithAPI/index.html" target="_blank">
+              <div class="prjImg">
+                  <img src="img/EmployeeDirectoryAPI.png" alt="Employee Directory API" class="prj">
+                <div class="prjOverlay">
+                  <h3 class="prjTitle">Employee Directory API</h3>
+                  <div class="prjSkill">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="projectCard" data-aos="flip-left" data-aos-duration="5500">
+            <a href="https://codepen.io/ToshikazuKato/pen/oyvrVy" target="_blank">
+              <div class="prjImg">
+                  <img src="img/TicTacToe.png" alt="Scoreboard React" class="prj">
+                <div class="prjOverlay">
+                  <h3 class="prjTitle">Tic Tac Toe Game</h3>
+                  <div class="prjSkill">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="projectCard" data-aos="flip-left" data-aos-duration="6500">
+            <a href="https://codepen.io/ToshikazuKato/pen/xjMQvE" target="_blank">
+              <div class="prjImg">
+                  <img src="img/JsCalculator.png" alt="Scoreboard React" class="prj">
+                <div class="prjOverlay">
+                  <h3 class="prjTitle">JavaScript Calculator</h3>
+                  <div class="prjSkill">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="projectCard" data-aos="flip-left" data-aos-duration="7500">
+            <a href="https://codepen.io/ToshikazuKato/pen/YOpLZj" target="_blank">
+              <div class="prjImg">
+                  <img src="img/DrumMachineReact.png" alt="Scoreboard React" class="prj">
+                <div class="prjOverlay">
+                  <h1 class="prjTitle">Drum Machine</h1>
+                  <div class="prjSkill">
+                    <i class="fab fa-html5"></i>
+                    <i class="fab fa-css3-alt"></i>
+                    <i class="fab fa-js"></i>
+                    <i class="fab fa-react"></i>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div> <!--projectContainer -->
+      </section>
+
+    </main>
+
+    <footer class="footer flex">
+
+      <div class="footer-copyright flex">
+        <p class="copyright">© 2018 Copyright</p>
+        <a href="#home"><img src="img/Shape2.svg" alt="Logo" class="logo-copyright"></a>
+      </div>
+
+      <ul class="socialList flex">
+        <li class="footerSocialContact github">
+          <a href="https://github.com/ToshikazuKato" target="_blank" class="socialLinkContact">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+        <li class="footerSocialContact linkedin">
+          <a href="https://www.linkedin.com/feed" target="_blank" class="socialLinkContact">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="footerSocialContact instagram">
+          <a href="https://www.instagram.com/kazu27bsk/" target="_blank" class="socialLinkContact">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="footerSocialContact codepen">
+          <a href="https://codepen.io/ToshikazuKato/" target="_blank" class="socialLinkContact">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="footerSocialContact facebook">
+          <a href="https://www.facebook.com/toshikazu.kato.906" target="_blank" class="socialLinkContact">
+            <i class="fab fa-facebook"></i>
+          </a>
+        </li>
+      </ul>
+
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.0/dist/aos.js"></script>
+    <script src="js/jquery.drawsvg.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/SplitLayout/classie.js"></script>
+    <script src="js/SplitLayout/cbpSplitLayout.js"></script>
+  </body>
+</html>

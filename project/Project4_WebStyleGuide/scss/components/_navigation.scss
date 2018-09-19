@@ -1,0 +1,18 @@
+
+.nav__item{
+  @extend %navItems;
+
+  &:hover{
+    background-color: $theme-color;
+  }
+
+  a{
+    @extend %links;
+
+  }
+
+  & a:hover{
+    color: $white-color;
+  }
+
+}

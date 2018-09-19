@@ -1,0 +1,14 @@
+
+
+.btn{
+  @include btnColor($btn-colors);
+}
+
+.btn--default,
+.btn--success,
+.btn--error,
+.btn--warning,
+.btn--info{
+  @extend %btn;
+
+}

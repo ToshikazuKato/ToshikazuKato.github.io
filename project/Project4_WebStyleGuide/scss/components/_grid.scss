@@ -1,0 +1,49 @@
+
+.grid__row{
+  @include flex($just: space-around );
+  margin-bottom: 5vh;
+
+  @include mq(desktop){
+    flex-direction: row;
+  }
+}
+
+.grid__col--12,
+.grid__col--6,
+.grid__col--4,
+.grid__col--3,
+.grid__col--5,
+.grid__col--7,
+.grid__col--8{
+  @extend %grid__col;
+  flex:1;
+
+}
+
+.grid__col--9{
+  @include mq(desktop){
+    padding-top: 18px;
+  }
+}
+
+.grid__col--12{
+  @include mq(desktop){
+    display: flex;
+    justify-content: space-around;
+  }
+}
+
+.grid__col{
+  @include gridColor($grid-col);
+
+  @include mq(desktop){
+    @include gridLayout ($grid-layout);
+  }
+}
+
+.centered{
+  @include mq(desktop){
+    max-width: 70%;
+    margin: 0 auto;
+  }
+}

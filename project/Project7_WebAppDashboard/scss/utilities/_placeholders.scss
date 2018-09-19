@@ -1,0 +1,81 @@
+//icons for nav bar
+%navIcons {
+    height: 20px;
+    width: 20px;
+    fill: #fff;
+}
+
+//alert notification
+%alertItems{
+  background-color: $theme-color;
+  border-radius: 3px;
+  margin: 2vh 2vw;
+  padding: 10px;
+  @include flex($just: space-between, $dir: row);
+}
+
+%alert{
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+  font-family: $font-family2;
+  @include mq(tablet){
+    font-size: 24px;
+  }
+}
+
+%notifications{
+  display: inline-block;
+  font-size: 12px;
+  width: 80%;
+  text-align: center;
+  color: #fff;
+
+  @include mq(tablet){
+    font-size: 18px;
+  }
+
+}
+
+%close{
+  display: inline-block;
+  color: #fff;
+  font-size: 12px;
+  background-color: $theme-color;
+  border: none;
+
+  @include mq(tablet){
+    font-size: 18px;
+  }
+}
+
+// social icons
+%socialIconContainer{
+  @include flex($just: center);
+  background-color: $theme-color;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+
+  @include mq(tablet){
+    width: 75px;
+    height: 75px;
+  }
+}
+
+%card{
+  @include flex($just: space-evenly, $dir: row);
+  margin: 2vh 0;
+  padding: 1.5vh 3vw;
+  border-radius: 3px;
+  border: 1px solid $font-color;
+  background-color: $field-color;
+  @include mq(tablet){
+    padding: 4vh 3vw;
+    width: 30%;
+  }
+  @include mq(desktop){
+    width: 30%;
+  }
+
+}

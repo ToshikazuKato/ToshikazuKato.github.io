@@ -1,0 +1,103 @@
+
+// media query
+@mixin mq($bp){
+
+  @if $bp == null {
+    @error "#{$bp} is not valid.";
+
+  }@else if $bp == 'desktop' {
+
+    @media screen and (min-width: $breakpoint-desktop){
+      @content;
+    }
+  }
+
+};
+
+
+// flex settings
+@mixin flex(
+                     $just,
+                     $disp:flex,
+                     $dir: column,
+            )
+           {
+    justify-content: $just;
+            display: $disp; //felx
+      flex-direction: $dir; //column
+    @content;
+}
+
+
+//btn-colors => In btn component, .btn{ @include btnColor($btn-colors) }
+@mixin btnColor($btnObj){
+
+  @each $btn-type, $hexColor in $btnObj{
+
+    &--#{$btn-type}{
+      background-color: $hexColor;
+    }
+
+  }
+
+}
+
+//grid__col *I'm not sure if I use this mixin in a correct or effective way.
+@mixin gridColor($gridObj){
+
+  @each $grid-type, $gridHexColor in $gridObj{
+
+      @if $grid-type == 3 {
+        &--#{$grid-type}.theme__colors{
+          background-color: map-get($gridObj, $grid-type);
+        }
+      } @else if $grid-type == 4{
+        &--#{$grid-type}.theme__colors{
+          background-color: map-get($gridObj, $grid-type);
+        }
+      } @else if $grid-type == 5{
+        &--#{$grid-type}.theme__colors{
+          background-color: map-get($gridObj, $grid-type);
+        }
+      } @else if $grid-type == 6{
+        &--#{$grid-type}.theme__colors{
+          background-color: map-get($gridObj, $grid-type);
+        }
+      } @else if $grid-type == 7{
+        &--#{$grid-type}.theme__colors{
+          background-color: map-get($gridObj, $grid-type);
+        }
+      } @else if $grid-type == 8{
+        &--#{$grid-type}.theme__colors{
+          background-color: map-get($gridObj, $grid-type);
+        }
+      } @else if $grid-type == 12{
+        &--#{$grid-type}.theme__colors{
+          background-color: map-get($gridObj, $grid-type);
+        }
+      }
+
+  }//for
+
+}//gridColor
+
+@mixin gridLayout ($gridObj-layout){
+
+  @each $gridNum, $gridSize in $gridObj-layout{
+    &--#{$gridNum}{
+      flex-grow: $gridSize;
+    }
+  }
+
+}
+
+
+//margin for center and asjust margin-top
+@mixin margin($mgn-top,$mgn-btm:0){
+
+  margin-top: $mgn-top;
+  margin-bottom: $mgn-btm;
+  margin-left: auto;
+  margin-right: auto;
+
+}

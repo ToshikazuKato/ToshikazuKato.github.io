@@ -1,0 +1,30 @@
+.newMembers{
+  @include mq(tablet){
+    grid-area: newMembers;
+  }
+}
+
+.circleMem{
+  @include circleImg($height: 50px, $width: 50px);
+}
+
+.membersItems{
+  @include flex($just: space-around, $dir: row);
+  margin: 1.5vh 0;
+  border-bottom: 1px solid $font-color;
+  padding: 5px 3px 10px 3px;
+}
+
+.membersItems:last-child{
+  border-bottom: none;
+}
+
+.memberInfo{
+  font-size: 12px;
+  width: 70%;
+  text-align: center;
+}
+
+.memberDate{
+  font-size: 10px;
+}

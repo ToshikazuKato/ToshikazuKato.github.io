@@ -1,0 +1,74 @@
+.traffic{
+  padding: 0 2vw;
+
+  @include mq(tablet){
+    grid-area: traffic;
+  }
+
+}
+
+.dailyTraffic{
+  @include mq(tablet){
+    grid-area: daily;
+  }
+}
+
+.mobileUsers{
+  @include mq(tablet){
+    grid-area: mobile;
+    border-left: 1px solid $font-color;
+  }
+}
+
+.tab{
+  @include flex($just: initial, $dir: row);
+  @include mq(tablet){
+    margin: 15px 0;
+  }
+}
+
+.sectionTitle{
+  margin: 0;
+  display: inline-block;
+  @include mq(tablet){
+    font-size: 26px;
+    margin-right: auto;
+  }
+}
+
+.trafficTab{
+  width: 70%;
+  margin-left: auto;
+  @include flex($just: space-around, $dir: row);
+}
+
+.tabItems{
+  display: inline-block;
+  font-size: 12px;
+  cursor: pointer;
+  @include mq(tablet){
+    font-size: 20px;
+  }
+}
+
+.selected{
+  color: #fff;
+  background-color: rgb(129, 195, 123);
+  padding: 5px 8px;
+  border-radius: 5px;
+}
+
+#trafficLine,
+#dailyBar,
+#mobilePie,
+.cardContainer,
+.membersList,
+.activityList,
+.messageForm,
+.settingsForm{
+  @include mq(tablet){
+    margin-top: 30px;
+    padding: 5px 10px;
+  }
+
+}

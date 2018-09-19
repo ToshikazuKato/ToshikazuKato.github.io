@@ -1,0 +1,44 @@
+// container
+.container{
+  width: 80%;
+  margin:  auto;
+  padding-top: 3vh;
+  padding-bottom: 10vh;
+  line-height: 1.5;
+  color: $font-color;
+
+  p{
+    font-family: $font-family2;
+  }
+
+  h1,
+  h4{
+    font-family: $font-family1;
+  }
+
+}
+
+.headline--secondary{
+  font-weight: 200;
+  margin-bottom: 1.33em;
+  text-align: left;
+
+  @include mq(desktop){
+    margin-top: 0;
+  }
+}
+
+.headline--primary{
+  color: $theme-color;
+  padding-left: 5vw;
+}
+
+.link{
+  color: $accent-color;
+}
+
+.blockquote{
+  border-left: 8px solid $theme-color;
+  padding-left: 1em;
+  border-radius: $brdr-radius;
+}

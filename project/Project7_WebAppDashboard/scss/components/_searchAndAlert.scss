@@ -1,0 +1,95 @@
+.container{
+
+}
+
+.dashboard{
+  @include flex($just: space-between, $dir: row);
+
+  @include mq(tablet){
+    grid-area: dashboard;
+  }
+
+}
+
+.spanDash{
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.dashboardTitle{
+  font-size: 16px;
+  margin: 0;
+  display: inline-block;
+  @include mq(tablet){
+    font-size: 26px;
+  }
+}
+
+.spanSearch{
+  width: 65%;
+  display: inline-block;
+  padding: 5px 5px 8px 5px;
+  border-left: 1px solid $font-color;
+  border-bottom: 1px solid $font-color;
+  background-color: rgb(244, 244, 244);
+
+  @include mq(tablet){
+    padding: 15px 5px 20px 5px;
+    height: 70px;
+  }
+
+}
+
+.searchForm{
+  display: inline-block;
+  margin-left: 15px;
+  width: 90%;
+  @include mq(tablet){
+    margin-left: 50%;
+  }
+}
+
+.search{
+  font-size: 12px;
+  border: 1px solid #aaaaaa;
+  border-radius: 3px;
+  padding: 5px;
+  height: 20px;
+  width: 100%;
+
+  @include mq(tablet){
+    height: 40px;
+    width: 50%;
+  }
+}
+
+.search:focus{
+  outline: rgb(79, 158, 208) auto 3px;
+}
+
+.search::placeholder{
+  color: rgb(180, 180, 180);
+}
+
+.alertContainer{
+  @include mq(tablet){
+    grid-area: alert;
+    margin: 20px 0;
+  }
+}
+
+.alertItems{
+  @extend %alertItems;
+}
+
+.alert{
+  @extend %alert;
+}
+
+.notifications{
+  @extend %notifications;
+}
+
+.close{
+  @extend %close;
+}

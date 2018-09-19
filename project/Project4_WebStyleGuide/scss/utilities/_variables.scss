@@ -1,0 +1,47 @@
+// fonts
+$font-family1: 'Source Sans Pro', sans-serif;
+$font-family2:  'Raleway', sans-serif;
+
+
+//breakpoints
+$breakpoint-desktop: 1400px;
+
+
+//colors
+$font-color: #aaaaaa; //grey
+$theme-color: #00e8c4; //teal
+$accent-color: #51ddfc; //lightblue
+$white-color: #ffffff;
+
+//btn colors => create btn classes by .btn--#{}
+$btn-colors: (
+  'default' : $accent-color,
+  'success' :#64d67d ,
+  'error' : #eb6565,
+  'warning' : #f98e41,
+  'info' : #af7de8
+);
+
+// Grid color
+$grid-col: (
+  3 : #db9ffb,
+  4 : #7dcefc ,
+  5 : #8ed28b,
+  6 : #2b87a3,
+  7 : #e38585,
+  8 : #d7936c,
+  12 : #91fade,
+);
+
+// Grid layouts
+$grid-layout: (
+  6 : 1,
+  7 : 1.4,
+  8 : 2,
+  9 : 3,
+  10 : 5, 
+);
+
+
+//border-radius
+$brdr-radius: 5px;

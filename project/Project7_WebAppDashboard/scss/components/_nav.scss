@@ -1,0 +1,39 @@
+
+.nav{
+  background-color: $nav-color;
+  padding: 1.5vh 3vw;
+
+  @include mq(tablet){
+    grid-area: nav;
+    padding: 0;
+  }
+
+}
+
+.ul{
+  @include flex($just: space-between, $dir: row);
+  @include mq(tablet){
+    @include flex($just: space-between);
+  }
+}
+
+.link{
+  display: inline-block;
+
+  @include mq(tablet){
+    margin: 45px auto;
+  };
+}
+
+.anchor{
+  display: block;
+  height: 20px;
+}
+
+.navIcons{
+  @extend %navIcons;
+  @include mq(tablet){
+    width: 30px;
+    height: 30px;
+  }
+}
