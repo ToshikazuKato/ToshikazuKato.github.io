@@ -464,7 +464,9 @@ ul{
 /* about me skill section */
 .fa-html5,
 .fa-css3-alt,
-.fa-js{
+.fa-js,
+.fa-sass,
+.fa-react{
   margin-bottom: 5px;
   font-size: 30px;
   transition: all .3s ease .2s;
