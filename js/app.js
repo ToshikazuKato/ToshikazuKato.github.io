@@ -27,7 +27,6 @@ const header = $('.header'),
 win.on('scroll', function(event){
   event.preventDefault();
   var  p = win.scrollTop()/max;
-  console.log(p);
   svg.drawsvg('progress',p);
 });
 
